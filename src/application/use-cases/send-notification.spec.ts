@@ -13,6 +13,7 @@ describe('Send Notification', () => {
       recipientId: 'example-recipient-it',
     });
 
+    expect(notificationRepository.notifications).toHaveLength(1);
     expect(notificationRepository.notifications[0]).toEqual(notification);
   });
 });
